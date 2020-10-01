@@ -16,14 +16,14 @@ package fr.tse.fise2.td4;
 public class Dictionary {
 
 
-    private Map<String, String> content = new HashMap<String, String>();
+    private Map<String, String> content = new HashMap<>();
 
 
     public static void main(String[] args) {
 
         Dictionary dico = new Dictionary();
 
-        String entreeClavier = "";
+        String entreeClavier;
         while (true) {
             System.out.println("French-English Dictionary");
             System.out.println("1) Add a word to the dictionary");

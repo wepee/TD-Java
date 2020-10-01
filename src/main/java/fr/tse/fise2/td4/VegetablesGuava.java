@@ -4,7 +4,7 @@ import java.util.*;
 
 public class VegetablesGuava {
 
-    Map<String, List<String>> vegetables = new HashMap<String, List<String>>();
+    Map<String, List<String>> vegetables = new HashMap<>();
 
     public static void main(String[] args) {
 
@@ -29,7 +29,7 @@ public class VegetablesGuava {
                 vegetables.replace(key,oldList);
             }
         } else {
-            List<String> list = new ArrayList<String>();
+            List<String> list = new ArrayList<>();
             list.add(specie);
             vegetables.put(key, list);
 
@@ -40,10 +40,9 @@ public class VegetablesGuava {
 
         Iterator it = vegetables.entrySet().iterator();
         while (it.hasNext()) {
-            int i=1;
             Map.Entry m = (Map.Entry) it.next();
-            System.out.println( i + " : "+m.getKey()+", Specie: "+m.getValue());
-            i++;
+            System.out.println( "Vegetables  : "+m.getKey()+", Specie: "+m.getValue());
+
     }
 }
 

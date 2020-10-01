@@ -61,7 +61,7 @@ public class AccountUtils {
 
     public static List<Account> randomAccount(final int k) {
 
-        List<Account> accounts = new ArrayList<Account>();
+        List<Account> accounts = new ArrayList<>();
 
         for (int i = 0; i < k; i++)
             accounts.add(randomAccountGenerator());

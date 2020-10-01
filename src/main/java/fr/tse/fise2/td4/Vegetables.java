@@ -4,7 +4,7 @@ import java.util.*;
 
 public class Vegetables {
 
-    Map<String, List<String>> vegetables = new HashMap<String, List<String>>();
+    Map<String, List<String>> vegetables = new HashMap<>();
 
     public static void main(String[] args) {
 
@@ -29,7 +29,7 @@ public class Vegetables {
                 vegetables.replace(key,oldList);
             }
         } else {
-            List<String> list = new ArrayList<String>();
+            List<String> list = new ArrayList<>();
             list.add(specie);
             vegetables.put(key, list);
 
